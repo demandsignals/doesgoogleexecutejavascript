@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
       'the network. However, Google does not make HTTP requests with the fetch API.' +
     '</h2>';
 
-    fetch('http://localhost:3000/fetch', {
+    fetch('/fetch', {
       method: 'get'
     }).then(function (response) {
       return response.json();

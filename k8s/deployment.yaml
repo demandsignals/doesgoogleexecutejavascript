@@ -11,6 +11,6 @@ spec:
     spec:
       containers:
       - name: doesgoogleexecutejavascript
-        image: 311873742948.dkr.ecr.us-east-1.amazonaws.com/doesgoogleexecutejavascript:1.1.0
+        image: 311873742948.dkr.ecr.us-east-1.amazonaws.com/doesgoogleexecutejavascript:1.1.1
         ports:
         - containerPort: 3000

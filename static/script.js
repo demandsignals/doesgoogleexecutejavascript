@@ -3,15 +3,14 @@ document.addEventListener('DOMContentLoaded', function() {
     '<h1>Yes,</h1>' +
     '<h2>' +
       'Google executes JavaScript, even if the script is fetched from ' +
-      'the network. However, Google does not make AJAX requests.' +
+      'the network. However, Google does not make HTTP requests with the fetch API.' +
     '</h2>';
 
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function() {
-      if (xmlhttp.readyState === XMLHttpRequest.DONE && xmlhttp.status === 200) {
-        document.getElementById('content').innerHTML = JSON.parse(xmlhttp.responseText).message;
-      }
-    };
-    xmlhttp.open("GET", "/ajax", true);
-    xmlhttp.send();
+    fetch('http://localhost:3000/fetch', {
+      method: 'get'
+    }).then(function (response) {
+      return response.json();
+    }).then(function (responseString) {
+      document.getElementById('content').innerHTML = responseString.message;
+    });
 }, false);

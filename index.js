@@ -38,10 +38,10 @@ app.get('/', function(req, res) {
   res.render('index.garnet');
 });
 
-// ajax test
-app.get('/ajax', function(req, res) {
+// fetch test
+app.get('/fetch', function(req, res) {
   res.json({
-    message: '<h1>Yes,</h1><h2>Google executes JavaScript and even makes AJAX requests.</h2>',
+    message: '<h1>Yes,</h1><h2>Google executes JavaScript and even makes HTTP requests with the fetch API.</h2>',
   });
 });
 

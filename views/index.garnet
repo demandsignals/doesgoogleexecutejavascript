@@ -63,8 +63,8 @@
     <ol>
       <li>The client does not execute JavaScript.</li>
       <li>The client executes JavaScript, but only if it is embedded in the document.</li>
-      <li>The client executes JavaScript, even if the script is fetched from the network. However, the client does not make AJAX requests.</li>
-      <li>The client executes JavaScript and even makes AJAX requests.</li>
+      <li>The client executes JavaScript, even if the script is fetched from the network. However, the client does not make HTTP requests with the fetch API.</li>
+      <li>The client executes JavaScript and even makes HTTP requests with the fetch API.</li>
     </ol>
     <p>Google will index one of these messages&mdash;but which one? <a href="http://webcache.googleusercontent.com/search?q=cache:www.doesgoogleexecutejavascript.com">Click here</a> to see the results of this experiment.</p>
     <p class="pull-right">

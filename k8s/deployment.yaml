@@ -1,0 +1,16 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: doesgoogleexecutejavascript
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: doesgoogleexecutejavascript
+    spec:
+      containers:
+      - name: doesgoogleexecutejavascript
+        image: 311873742948.dkr.ecr.us-east-1.amazonaws.com/doesgoogleexecutejavascript:1.1.0
+        ports:
+        - containerPort: 3000

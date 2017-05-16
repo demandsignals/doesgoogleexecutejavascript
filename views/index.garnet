@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="google-site-verification" content="Qgu6qAkqqvl658NB7hPip5U1qJEwVv2IvM1VvwiR-VU" />
     <title>Does Google Execute JavaScript?</title>
     <script>
       document.addEventListener('DOMContentLoaded', function() {
